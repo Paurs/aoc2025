@@ -6,13 +6,6 @@ pub fn parse(input: &str) -> Vec<(u64, u64)> {
         .collect()
 }
 
-pub fn parse_test(input: &str) -> Vec<(&str, &str)> {
-    input
-        .split(",")
-        .map(|r| r.split_once("-").unwrap_or(("0", "0")))
-        .collect()
-}
-
 const DIVISORS_PART1: [(u64, u64, u64); 5] = [
     (10, 99, 11),
     (1000, 9999, 101),
